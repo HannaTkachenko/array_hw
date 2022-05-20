@@ -35,3 +35,11 @@ const shifted = languageArray.shift();
 
 console.log(shifted);
 console.log(languageArray);
+
+// Дан массив ['js', 'css', ‘html']. Выведите на экран последний элемент и удалите его.
+const languageArray2 = ["js", "css", "html"];
+const popped = languageArray2.pop();
+
+console.log(popped);
+console.log(languageArray2);
+

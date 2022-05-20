@@ -57,26 +57,31 @@ console.log(slicedEnd);
 
 // Дан массив [1, 2, 3, 4, 5]. С помощью метода splice преобразуйте массив в [1, 4, 5].
 const numberArraySplice1 = [1, 2, 3, 4, 5];
-const removedFromArraySplice1 = numberArraySplice1.splice(1,2)
+const removedFromArraySplice1 = numberArraySplice1.splice(1, 2);
 
 console.log(numberArraySplice1);
 
 //Дан массив [1, 2, 3, 4, 5]. С помощью метода splice запишите в новый массив элементы [2, 3, 4].
 const numberArraySplice2 = [1, 2, 3, 4, 5];
-const removedFromArraySplice2 = numberArraySplice2.splice(1,3)
+const removedFromArraySplice2 = numberArraySplice2.splice(1, 3);
 
 console.log(removedFromArraySplice2);
 
 // Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 2, 3, 'a', 'b', 'c', 4, 5].
 const numberArraySplice3 = [1, 2, 3, 4, 5];
-const addedToArraySplice3 = numberArraySplice3.splice(3,0,'a','b','c')
+const addedToArraySplice3 = numberArraySplice3.splice(3, 0, "a", "b", "c");
 
 console.log(numberArraySplice3);
 
 // Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
 const numberArraySplice4 = [1, 2, 3, 4, 5];
-const firstAddToArraySplice4 = numberArraySplice4.splice(1,0,'a','b')
-const secondAddToArraySplice4 = numberArraySplice4.splice(6,0,'c')
-const thirdAddToArraySplice4 = numberArraySplice4.splice(8,0,'e')
+const firstAddToArraySplice4 = numberArraySplice4.splice(1, 0, "a", "b");
+const secondAddToArraySplice4 = numberArraySplice4.splice(6, 0, "c");
+const thirdAddToArraySplice4 = numberArraySplice4.splice(8, 0, "e");
 
 console.log(numberArraySplice4);
+
+//Дан массив [3, 4, 1, 2, 7]. Отсортируйте его.
+const toBeSortedArray = [3, 4, 1, 2, 7];
+
+console.log(toBeSortedArray.sort())

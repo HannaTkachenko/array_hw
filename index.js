@@ -28,3 +28,10 @@ const smallArray = [1, 2, 3];
 
 console.log(smallArray.unshift(4, 5, 6));
 console.log(smallArray);
+
+//Дан массив ['js', 'css', ‘html']. Выведите на экран первый элемент и удалите его.
+const languageArray = ["js", "css", "html"];
+const shifted = languageArray.shift();
+
+console.log(shifted);
+console.log(languageArray);

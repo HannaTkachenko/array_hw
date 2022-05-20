@@ -45,6 +45,14 @@ console.log(languageArray2);
 
 //Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
 const numberArray = [1, 2, 3, 4, 5];
-const sliced = numberArray.slice(0,3);
+const slicedBegin = numberArray.slice(0,3);
 
-console.log(sliced);
+console.log(slicedBegin);
+
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
+// const numberArray = [1, 2, 3, 4, 5];
+const slicedEnd = numberArray.slice(-2);
+
+console.log(slicedEnd);
+
+

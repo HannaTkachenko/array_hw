@@ -43,3 +43,8 @@ const popped = languageArray2.pop();
 console.log(popped);
 console.log(languageArray2);
 
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
+const numberArray = [1, 2, 3, 4, 5];
+const sliced = numberArray.slice(0,3);
+
+console.log(sliced);

@@ -22,3 +22,9 @@ const total = initialArray.push(4, 5, 6);
 
 console.log(initialArray);
 console.log(total);
+
+//Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
+const smallArray = [1, 2, 3];
+
+console.log(smallArray.unshift(4, 5, 6));
+console.log(smallArray);

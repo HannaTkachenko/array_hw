@@ -16,4 +16,9 @@ console.log("reversed array: ", reversedArray);
 
 console.log("normal array: ", normalArray);
 
+//Дан массив [1, 2, 3]. Добавьте ему в конец элементы 4, 5, 6.
+const initialArray = [1, 2, 3];
+const total = initialArray.push(4, 5, 6);
 
+console.log(initialArray);
+console.log(total);

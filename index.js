@@ -2,7 +2,18 @@
 
 //Даны два массива: [1, 2, 3] и [4, 5, 6]. Объедините их вместе.
 const array1 = [1, 2, 3];
-const array2 = [4,5,6];
-const array3 = array1.concat(array2);
+const array2 = [4, 5, 6];
+const arrayConcat = array1.concat(array2);
 
-console.log(array3)
+console.log(arrayConcat);
+
+//Дан массив [1, 2, 3]. Сделайте из него массив [3, 2, 1].
+const normalArray = [1, 2, 3];
+console.log("normal array: ", normalArray);
+
+const reversedArray = normalArray.reverse();
+console.log("reversed array: ", reversedArray);
+
+console.log("normal array: ", normalArray);
+
+

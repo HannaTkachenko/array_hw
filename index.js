@@ -84,4 +84,20 @@ console.log(numberArraySplice4);
 //Дан массив [3, 4, 1, 2, 7]. Отсортируйте его.
 const toBeSortedArray = [3, 4, 1, 2, 7];
 
-console.log(toBeSortedArray.sort())
+console.log(toBeSortedArray.sort());
+
+//Необходимо создать функцию hasElem, которая параметрами будет принимать массив и строку, и возвращать true, если строка есть в массиве, и false - если нет
+
+/**
+ *
+ * @param {array} array
+ * @param {string} string
+ * @returns {boolean} true if has string in value
+ */
+const hasElem = function (value) {
+  return typeof value === "string";
+};
+
+console.log(hasElem("ggggg", [1, 2, 3, 4]));
+
+

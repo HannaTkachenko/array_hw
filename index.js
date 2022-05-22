@@ -89,15 +89,21 @@ console.log(toBeSortedArray.sort());
 //Необходимо создать функцию hasElem, которая параметрами будет принимать массив и строку, и возвращать true, если строка есть в массиве, и false - если нет
 
 /**
- *
- * @param {array} array
+ * *
  * @param {string} string
+ * @param {array} array
  * @returns {boolean} true if has string in value
  */
-const hasElem = function (value) {
-  return typeof value === "string";
+const string = "hello";
+const array = ["hi", "hello"];
+const hasElem = function (stringValue, arrayOfThings) {
+  for (let i = 0; i < arrayOfThings.length; i++) {
+    if (stringValue === arrayOfThings[i]) {
+      return true;
+    }
+  }
+  return false;
 };
+console.log(hasElem(string, array));
 
-console.log(hasElem("ggggg", [1, 2, 3, 4]));
-
-
+//Дан массив с числами. Проверьте, что в этом массиве есть указанное число. Если есть - вернуть true, а если нет - вернуть false.

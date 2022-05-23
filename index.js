@@ -118,3 +118,16 @@ const isNumberInArray = function (requiredNumber) {
   return false;
 };
 console.log(isNumberInArray(10));
+
+//Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть -  вернуть true[2,2,1], а если нет - вернуть false[1,2,1]
+
+const mixedArrayOfNumbers = [5, 5, 4, 5, 9, 3, 4, 8, 4, 5, 1];
+const isTwoSameNumberNear = function () {
+  for (let i = 0; i < mixedArrayOfNumbers.length; i++) {
+    if (mixedArrayOfNumbers[i] === mixedArrayOfNumbers[i + 1]) {
+      return true;
+    }
+  }
+  return false;
+};
+console.log(isTwoSameNumberNear(mixedArrayOfNumbers));

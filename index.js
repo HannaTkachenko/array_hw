@@ -107,3 +107,14 @@ const hasElem = function (stringValue, arrayOfThings) {
 console.log(hasElem(string, array));
 
 //Дан массив с числами. Проверьте, что в этом массиве есть указанное число. Если есть - вернуть true, а если нет - вернуть false.
+
+const arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const isNumberInArray = function (requiredNumber) {
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    if (requiredNumber === arrayOfNumbers[i]) {
+      return true;
+    }
+  }
+  return false;
+};
+console.log(isNumberInArray(10));

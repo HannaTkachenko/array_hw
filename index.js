@@ -109,6 +109,11 @@ console.log(hasElem(string, array));
 //Дан массив с числами. Проверьте, что в этом массиве есть указанное число. Если есть - вернуть true, а если нет - вернуть false.
 
 const arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+/**
+ * 
+ * @param {*} requiredNumber 
+ * @returns boolean
+ */
 const isNumberInArray = function (requiredNumber) {
   for (let i = 0; i < arrayOfNumbers.length; i++) {
     if (requiredNumber === arrayOfNumbers[i]) {
@@ -119,9 +124,26 @@ const isNumberInArray = function (requiredNumber) {
 };
 console.log(isNumberInArray(10));
 
+//альтернативная версия функции, использующая метод includes()
+const isNumberInArray2 = function (requiredNumber) {
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    if (!arrayOfNumbers.includes(requiredNumber)) {
+      return false;
+    }
+  }
+  return true;
+};
+console.log(isNumberInArray2(8));
+
+
+
 //Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть -  вернуть true[2,2,1], а если нет - вернуть false[1,2,1]
 
 const mixedArrayOfNumbers = [5, 5, 4, 5, 9, 3, 4, 8, 4, 5, 1];
+/**
+ * @param {*} array  
+ * @returns boolean
+ */
 const isTwoSameNumberNear = function () {
   for (let i = 0; i < mixedArrayOfNumbers.length; i++) {
     if (mixedArrayOfNumbers[i] === mixedArrayOfNumbers[i + 1]) {

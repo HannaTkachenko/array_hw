@@ -110,8 +110,8 @@ console.log(hasElem(string, array));
 
 const arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 /**
- * 
- * @param {*} requiredNumber 
+ *
+ * @param {*} requiredNumber
  * @returns boolean
  */
 const isNumberInArray = function (requiredNumber) {
@@ -135,13 +135,11 @@ const isNumberInArray2 = function (requiredNumber) {
 };
 console.log(isNumberInArray2(8));
 
-
-
 //Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть -  вернуть true[2,2,1], а если нет - вернуть false[1,2,1]
 
 const mixedArrayOfNumbers = [5, 5, 4, 5, 9, 3, 4, 8, 4, 5, 1];
 /**
- * @param {*} array  
+ * @param {*} array
  * @returns boolean
  */
 const isTwoSameNumberNear = function () {
@@ -153,3 +151,15 @@ const isTwoSameNumberNear = function () {
   return false;
 };
 console.log(isTwoSameNumberNear(mixedArrayOfNumbers));
+
+//Функция, которая возвращает массив заполненный 10 случайными числами в интервале от 5 до 33. Math.random()
+
+const randomNumbersArray = function (min, max) {
+  const arrayOfRandomNumbers = [];
+  for (let i = 0; i < 10; i++) {
+    let number = Math.floor(Math.random() * (max - min + 1)) + min;
+    arrayOfRandomNumbers.push(number);
+  }
+  return arrayOfRandomNumbers;
+};
+console.log(randomNumbersArray(5, 33));

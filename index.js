@@ -167,6 +167,9 @@ console.log(randomNumbersArray(5, 33));
 //Дан массив arr. Найдите среднее арифметическое его элементов. Проверьте задачу на массиве с элементами 12, 15, 20, 25, 59, 79.
 
 const findAverageNumber = function (...args) {
+  if (args.length === 0) {
+    throw new RangeError("Array can`t be empty!");
+  }
   const initialValue = 0;
   const summOfArray = args.reduce(
     (previousValue, currentValue) => previousValue + currentValue,
